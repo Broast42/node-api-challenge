@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express Router which allows you to split your endpoints into different files that make it easier to keep all your routes organized. Express also comes with express.json that makes sure that all incoming and outgoing requests (and results respectively) are in json format.
+
 - [ ] Describe Middleware?
+
+Middleware is a program or a function that intercepts a request and preforms some type of process on that request before sending it back or terminating the process altogether. Its very handy for when you have the same function preforming on different endpoints like checking if a id exists or if a user exists.
 
 - [ ] Describe a Resource?
 
+In a restfull api everything is a resource but more specifically a resource is any type of data that is or can be requested by the api. Each resource should have a unique url.
+
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+API’s send back result codes to tell clients whether or not a request was successful. 200 is ok 400 is an error just to name a few.
+
+
 - [ ] How can we partition our application into sub-applications?
+
+By separating  our endpoints into different files and using express router to define them as routes and require them in our index then use server.use and setting the specific resource url.
 
 ## Minimum Viable Product
 
