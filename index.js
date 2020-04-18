@@ -2,6 +2,7 @@ const express = require('express')
 //import routes for projects
 const projectsRouter = require('./projects/projectRoutes')
 //import routes for actions
+const actionsRouter = require('./actions/actionsRouter')
 
 const port = 4000
 const server = express()
@@ -15,8 +16,9 @@ server.get('/', (req, res) => {
 
 //routes for projects
 server.use("/projects", projectsRouter)
-
 //routes for actions
+server.use("/actions", actionsRouter)
+
 
 //default error result
 server.use((err,req,res,next) => {
