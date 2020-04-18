@@ -3,12 +3,13 @@ const express = require('express')
 const projectsRouter = require('./projects/projectRoutes')
 //import routes for actions
 const actionsRouter = require('./actions/actionsRouter')
+const cors = require("cors")
 
 const port = 4000
 const server = express()
 
 server.use(express.json())
-
+server.use(cors())
 
 server.get('/', (req, res) => {
     res.send(`<h2>Server is running</h2>`)
