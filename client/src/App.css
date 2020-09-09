@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: darkblue;
+}
+
+a:hover{
+  color: green;
+}
+
+.window-projects{
+  width: 600px;
+  min-height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid dodgerblue;
+  border-radius: 20px; 
+}
+
+.project-item{
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 20px;
+}
+
+.project-details{
+  border-bottom: 2px dashed dodgerblue;
+}
+
+.action{
+  border: 2px solid darkgreen;
+  border-radius: 15px;
+  margin: 10px;
+
+}
+
+button{
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  background: green;
+  color: lightgreen;
+  font-size: 1rem;
+}
